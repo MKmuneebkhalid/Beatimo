@@ -1,0 +1,14 @@
+:root {
+    --button-font-family: "Bilo", Helvetica;
+    --button-font-size: 16px;
+    --button-font-style: normal;
+    --button-font-weight: 400;
+    --button-letter-spacing: 0.48px;
+    --button-line-height: 20px;
+    --small-body-font-family: "Bilo", Helvetica;
+    --small-body-font-size: 20px;
+    --small-body-font-style: normal;
+    --small-body-font-weight: 400;
+    --small-body-letter-spacing: -0.2px;
+    --small-body-line-height: 22px;
+  }
