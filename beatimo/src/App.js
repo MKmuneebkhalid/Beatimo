@@ -3,10 +3,13 @@ import SiteSelectionHoverConsultingServices from './components/SiteSelectionHove
 import MainComponent from './components/MainComponent';
 import  Home  from './components/home';
 import OverlyServices from './components/OverlayServices';
+import { About } from './components/about';
+import { OverlayDomainTerms } from './components/OverlayDomainTerms';
+import  Career  from './components/Career';
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Career />
     </div>
   );
 }
