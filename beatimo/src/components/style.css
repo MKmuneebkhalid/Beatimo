@@ -1,3 +1,30 @@
+:root {
+  --button-font-family: "Bilo", Helvetica;
+  --button-font-size: 16px;
+  --button-font-style: normal;
+  --button-font-weight: 400;
+  --button-letter-spacing: 0.48px;
+  --button-line-height: 20px;
+  --h5-font-family: "Bilo", Helvetica;
+  --h5-font-size: 35px;
+  --h5-font-style: normal;
+  --h5-font-weight: 400;
+  --h5-letter-spacing: 0px;
+  --h5-line-height: 48.75505447387695px;
+  --small-body-font-family: "Bilo", Helvetica;
+  --small-body-font-size: 20px;
+  --small-body-font-style: normal;
+  --small-body-font-weight: 400;
+  --small-body-letter-spacing: -0.2px;
+  --small-body-line-height: 22px;
+  --subtitle-font-family: "Bilo", Helvetica;
+  --subtitle-font-size: 19px;
+  --subtitle-font-style: normal;
+  --subtitle-font-weight: 400;
+  --subtitle-letter-spacing: 0px;
+  --subtitle-line-height: 26px;
+}
+
 .site-selection {
     background-color: #fffae6;
     display: flex;
@@ -1465,6 +1492,446 @@
   .home .frame-48095856 {
     height: 46px !important;
     left: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 46px !important;
+  }
+
+  .overlay-services {
+    background-color: #eefff6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .overlay-services .div {
+    background-color: #eefff6;
+    height: 3012px;
+    overflow: hidden;
+    position: relative;
+    width: 809px;
+  }
+  
+  .overlay-services .frame {
+    height: 46px !important;
+    left: 1294px !important;
+    position: absolute !important;
+    top: 7080px !important;
+    width: 46px !important;
+  }
+  
+  .overlay-services .frame-48095970 {
+    height: 46px !important;
+    left: 1294px !important;
+    position: absolute !important;
+    top: 7236px !important;
+    width: 46px !important;
+  }
+  
+  .overlay-services .frame-48095971 {
+    height: 46px !important;
+    left: 1294px !important;
+    position: absolute !important;
+    top: 7391px !important;
+    width: 46px !important;
+  }
+  
+  .overlay-services .frame-48095969 {
+    height: 46px !important;
+    left: 1294px !important;
+    position: absolute !important;
+    top: 6925px !important;
+    width: 46px !important;
+  }
+  
+  .overlay-services .frame-48095856 {
+    height: 46px !important;
+    left: 1294px !important;
+    position: absolute !important;
+    top: 7545px !important;
+    width: 46px !important;
+  }
+  
+  .overlay-services .frame-48095970-instance {
+    height: 46px !important;
+    left: 1294px !important;
+    position: absolute !important;
+    top: 7701px !important;
+    width: 46px !important;
+  }
+  
+  .overlay-services .frame-48095971-instance {
+    height: 46px !important;
+    left: 1294px !important;
+    position: absolute !important;
+    top: 7856px !important;
+    width: 46px !important;
+  }
+  
+  .overlay-services .overlap {
+    height: 2385px;
+    left: 48px;
+    position: absolute;
+    top: 0;
+    width: 710px;
+  }
+  
+  .overlay-services .line {
+    height: 1px;
+    left: 424px;
+    position: absolute;
+    top: 885px;
+    width: 1px;
+  }
+  
+  .overlay-services .frame-2 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 80px;
+    height: 2345px;
+    left: 0;
+    position: absolute;
+    top: 40px;
+  }
+  
+  .overlay-services .frame-wrapper {
+    align-items: center;
+    background-color: #007367;
+    border-radius: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8.76px;
+    justify-content: center;
+    padding: 87.64px 26.29px 87.64px 56.09px;
+    position: relative;
+    width: 709px;
+  }
+  
+  .overlay-services .div-wrapper {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 26.29px;
+    position: relative;
+    width: 587px;
+  }
+  
+  .overlay-services .frame-3 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 26.29px;
+    position: relative;
+    width: 587px;
+  }
+  
+  .overlay-services .planification-strat-wrapper {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 17.53px;
+    position: relative;
+  }
+  
+  .overlay-services .planification-strat {
+    color: #eefff6;
+    font-family: "Bilo-Regular", Helvetica;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 65px;
+    margin-top: -0.88px;
+    position: relative;
+    text-align: center;
+    width: 553.88px;
+  }
+  
+  .overlay-services .text-wrapper {
+    letter-spacing: -0.65px;
+    line-height: 60px;
+  }
+  
+  .overlay-services .span {
+    font-family: "STIXGeneral-Italic", Helvetica;
+    font-style: italic;
+    letter-spacing: -0.65px;
+    line-height: 60px;
+  }
+  
+  .overlay-services .frame-4 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    width: 710px;
+  }
+  
+  .overlay-services .frame-5 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    width: 710px;
+  }
+  
+  .overlay-services .frame-6 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 707px;
+  }
+  
+  .overlay-services .line-39 {
+    height: 1px !important;
+    margin-right: -4px !important;
+    position: relative !important;
+    width: 711px !important;
+  }
+  
+  .overlay-services .frame-7 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 112px;
+    position: relative;
+  }
+  
+  .overlay-services .frame-8 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+  }
+  
+  .overlay-services .group {
+    height: 26px;
+    position: relative;
+    width: 141px;
+  }
+  
+  .overlay-services .frame-9 {
+    align-items: center;
+    display: inline-flex;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .overlay-services .vector-instance {
+    height: 12.26px !important;
+    position: relative !important;
+    width: 16px !important;
+  }
+  
+  .overlay-services .heading-example {
+    color: #007367;
+    font-family: var(--subtitle-font-family);
+    font-size: var(--subtitle-font-size);
+    font-style: var(--subtitle-font-style);
+    font-weight: var(--subtitle-font-weight);
+    letter-spacing: var(--subtitle-letter-spacing);
+    line-height: var(--subtitle-line-height);
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .overlay-services .group-wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    width: 704px;
+  }
+  
+  .overlay-services .heading-example-wrapper {
+    height: 244px;
+    margin-right: -2px;
+    position: relative;
+    width: 706px;
+  }
+  
+  .overlay-services .p {
+    color: #007367;
+    font-family: var(--h5-font-family);
+    font-size: var(--h5-font-size);
+    font-style: var(--h5-font-style);
+    font-weight: var(--h5-font-weight);
+    left: 0;
+    letter-spacing: var(--h5-letter-spacing);
+    line-height: var(--h5-line-height);
+    position: absolute;
+    top: 0;
+    width: 704px;
+  }
+  
+  .overlay-services .heading-example-2 {
+    color: #007367;
+    font-family: var(--h5-font-family);
+    font-size: var(--h5-font-size);
+    font-style: var(--h5-font-style);
+    font-weight: var(--h5-font-weight);
+    letter-spacing: var(--h5-letter-spacing);
+    line-height: var(--h5-line-height);
+    position: relative;
+    width: 710px;
+  }
+  
+  .overlay-services .component {
+    background-image: url(../components/assests/overlayService/rectangle-1023.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 414px;
+    position: relative;
+    width: 709px;
+  }
+  
+  .overlay-services .play {
+    height: 60px;
+    left: 324px;
+    position: relative;
+    top: 197px;
+    width: 60px;
+  }
+  
+  .overlay-services .overlap-group {
+    -webkit-backdrop-filter: blur(20px) brightness(100%);
+    backdrop-filter: blur(20px) brightness(100%);
+    background-color: #ffffffb2;
+    border-radius: 31px;
+    height: 62px;
+    left: -1px;
+    position: relative;
+    top: -1px;
+    width: 62px;
+  }
+  
+  .overlay-services .triangle-instance {
+    height: 17px !important;
+    left: 26px !important;
+    position: absolute !important;
+    top: 23px !important;
+    width: 13px !important;
+  }
+  
+  .overlay-services .frame-10 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 323px;
+    position: relative;
+    width: 710px;
+  }
+  
+  .overlay-services .frame-11 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 32px;
+    margin-right: -43px;
+    position: relative;
+  }
+  
+  .overlay-services .group-2 {
+    height: 26px;
+    position: relative;
+    width: 126px;
+  }
+  
+  .overlay-services .frame-12 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    width: 753px;
+  }
+  
+  .overlay-services .group-3 {
+    height: 49px;
+    margin-right: -2px;
+    position: relative;
+    width: 755px;
+  }
+  
+  .overlay-services .heading-example-3 {
+    color: #007367;
+    font-family: var(--h5-font-family);
+    font-size: var(--h5-font-size);
+    font-style: var(--h5-font-style);
+    font-weight: var(--h5-font-weight);
+    left: 0;
+    letter-spacing: var(--h5-letter-spacing);
+    line-height: var(--h5-line-height);
+    position: absolute;
+    top: 0;
+    width: 753px;
+  }
+  
+  .overlay-services .heading-example-4 {
+    color: #007367;
+    font-family: var(--small-body-font-family);
+    font-size: var(--small-body-font-size);
+    font-style: var(--small-body-font-style);
+    font-weight: var(--small-body-font-weight);
+    letter-spacing: var(--small-body-letter-spacing);
+    line-height: var(--small-body-line-height);
+    position: relative;
+    width: 711px;
+  }
+  
+  .overlay-services .img {
+    height: 1px;
+    margin-bottom: -40px;
+    position: relative;
+    width: 1px;
+  }
+  
+  .overlay-services .frame-13 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 714px;
+    margin-bottom: -391.28px;
+    position: relative;
+    width: 710px;
+  }
+  
+  .overlay-services .group-4 {
+    height: 26px;
+    position: relative;
+    width: 129px;
+  }
+  
+  .overlay-services .line-2 {
+    height: 1px;
+    position: relative;
+    width: 1px;
+  }
+  
+  .overlay-services .frame-41223 {
+    height: 126px !important;
+    left: 662px !important;
     position: absolute !important;
     top: 0 !important;
     width: 46px !important;

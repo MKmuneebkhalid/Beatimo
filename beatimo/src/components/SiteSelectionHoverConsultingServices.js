@@ -1,10 +1,10 @@
 import React from "react";
-import "./style.css";  // Ensure this points to your CSS file containing the styles
+import "./style.css";
 
 import rectangleImage from '../components/assests/rectangle-1052.png';
 import group4091 from '../components/assests/group-40941.png';
 import groupImage from '../components/assests/group.png';
-import groupImage2 from '../components/assests/Group2.png';  // Make sure to
+import groupImage2 from '../components/assests/Group2.png';
 
 export const SiteSelectionHoverConsultingServices = () => {
   return (
