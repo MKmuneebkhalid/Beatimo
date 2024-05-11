@@ -1,11 +1,11 @@
 import React from "react";
-import { Frame11 } from "./Frame11";
-import { Frame41223 } from "./Frame41223";
-import { Frame48095970 } from "./Frame48095970";
-import { IconComponentNode } from "./IconComponentNode";
-import { Line35 } from "./Line35";
-import { NamecandidateNameFrame11Score101 } from "./NamecandidateNameFrame11Score101";
-import { Vector } from "./Vector";
+import { Frame11 } from "../components/assests/OverlayJob/Frame 11.svg";
+import { Frame41223 } from "../components/assests/OverlayJob/rame 41223.svg";
+import { Frame48095970 } from "../components/assests/OverlayJob/Frame 48095970.svg";
+import { IconComponentNode } from "../components/assests/OverlayJob/Frame 11.svg";
+import { Line35 } from "../components/assests/OverlayJob/Line 35.svg";
+import { NamecandidateNameFrame11Score101 } from "../components/assests/Frame 11.svg";
+import { Vector } from "../components/assests/OverlayJob/Vector.svg";
 import "./style.css";
 
 export const OverlayJob = () => {

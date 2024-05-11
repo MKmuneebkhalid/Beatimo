@@ -6,10 +6,11 @@ import OverlyServices from './components/OverlayServices';
 import { About } from './components/about';
 import { OverlayDomainTerms } from './components/OverlayDomainTerms';
 import  Career  from './components/Career';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
 function App() {
   return (
     <div className="App">
-      <Career />
+      <PrivacyPolicy />
     </div>
   );
 }

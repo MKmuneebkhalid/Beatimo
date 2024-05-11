@@ -1,12 +1,15 @@
 import React from "react";
-import { Frame11 } from "./Frame11";
-import { Frame48095965 } from "./Frame48095965";
-import { Frame48095976 } from "./Frame48095976";
-import { Frame48095977 } from "./Frame48095977";
-import { Frame48095978 } from "./Frame48095978";
-import { Line24 } from "./Line24";
-import { Line25 } from "./Line25";
-import { Vector } from "./Vector";
+import {ReactComponent as Frame11 } from "../components/assests/PrivacyPolicy/Frame 11.svg";
+import {ReactComponent as Frame48095965 } from "../components/assests/PrivacyPolicy/Frame 48095965.svg";
+import {ReactComponent as Frame48095976 } from "../components/assests/PrivacyPolicy/Frame 48095976.svg";
+import {ReactComponent as Frame48095977 } from "../components/assests/PrivacyPolicy/Frame 48095977.svg";
+import {ReactComponent as Frame48095978 } from "../components/assests/PrivacyPolicy/Frame 48095978.svg";
+import {ReactComponent as Line24 } from "../components/assests/PrivacyPolicy/Line 24.svg";
+import {ReactComponent as Line25 } from "../components/assests/PrivacyPolicy/Line 25.svg";
+import {ReactComponent as Vector } from "../components/assests/PrivacyPolicy/Vector.svg";
+import group41210 from "../components/assests/PrivacyPolicy/Group 41210.png";
+import group412225 from "../components/assests/PrivacyPolicy/Group 41225.png";
+
 import "./style.css";
 
 export const PrivacyPolicy = () => {
@@ -25,7 +28,7 @@ export const PrivacyPolicy = () => {
                 </div>
                 <p className="site-par-les-mauvais">SITE PAR LES MAUVAIS GARÇONS</p>
               </div>
-              <img className="img" alt="Group" src="group-41210.png" />
+              <img className="img" alt="Group" src={group41210} />
               <div className="group-3">
                 <Line25 className="line-25" />
                 <Line25 className="line-29" />
@@ -521,10 +524,11 @@ export const PrivacyPolicy = () => {
               <div className="text-wrapper-14">RÉSEAUX SOCIAUX</div>
               <div className="text-wrapper-14">EN</div>
             </div>
-            <img className="group-23" alt="Group" src="group-41225.png" />
+            <img className="group-23" alt="Group" src={group412225} />
           </div>
         </div>
       </div>
     </div>
   );
 };
+export default PrivacyPolicy;

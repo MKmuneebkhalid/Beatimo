@@ -1,5 +1,5 @@
 import React from "react";
-import { Frame11 } from "./Frame11";
+import { Frame11 } from "../components/assests/OverlayEmployment/Frame11";
 import { Frame41223 } from "./Frame41223";
 import { Frame48095970 } from "./Frame48095970";
 import { IconComponentNode } from "./IconComponentNode";
