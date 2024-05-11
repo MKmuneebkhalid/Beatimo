@@ -1,9 +1,9 @@
 import React from "react";
-import { Frame41223 } from "./Frame41223";
-import { Frame48095969 } from "./Frame48095969";
-import { IconComponentNode } from "./IconComponentNode";
-import { Line39 } from "./Line39";
-import { Vector } from "./Vector";
+import {ReactComponent as  Frame41223 } from "../components/assests/OverlayEmployee/frame-41223.svg";
+import {ReactComponent as  Frame48095969 } from "../components/assests/OverlayEmployee/frame-48095969.svg";
+import {ReactComponent as  IconComponentNode } from "../components/assests/OverlayEmployee/frame-48095969.svg";
+import {ReactComponent as  Line39 } from "../components/assests/OverlayEmployee/line-35.svg";
+import {ReactComponent as  Vector } from "../components/assests/OverlayEmployee/Vector.svg";
 import "./style.css";
 
 export const OverlayEmployee = () => {
@@ -216,3 +216,4 @@ export const OverlayEmployee = () => {
     </div>
   );
 };
+export default OverlayEmployee;

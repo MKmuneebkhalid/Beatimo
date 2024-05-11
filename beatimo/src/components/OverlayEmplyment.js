@@ -1,9 +1,9 @@
 import React from "react";
-import { Frame11 } from "../components/assests/OverlayEmployment/Frame11";
-import { Frame41223 } from "./Frame41223";
-import { Frame48095970 } from "./Frame48095970";
-import { IconComponentNode } from "./IconComponentNode";
-import { Line35 } from "./Line35";
+import {ReactComponent as Frame11 } from "../components/assests/OverlayEmployment/frame-11.svg";
+import {ReactComponent as Frame41223 } from "../components/assests/OverlayEmployment/frame-41223.svg";
+import {ReactComponent as Frame48095970 } from "../components/assests/OverlayEmployment/frame-48095970.svg";
+import {ReactComponent as IconComponentNode } from "../components/assests/OverlayEmployment/frame-11.svg";
+import {ReactComponent as Line35 } from "../components/assests/OverlayEmployment/line-35.svg";
 import "./style.css";
 
 export const OverlayEmployment = () => {

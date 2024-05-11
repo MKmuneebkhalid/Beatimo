@@ -1,17 +1,16 @@
-import SiteSelection  from './components/SiteSelection';
-import SiteSelectionHoverConsultingServices from './components/SiteSelectionHoverConsultingServices';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainComponent from './components/MainComponent';
-import  Home  from './components/home';
-import OverlyServices from './components/OverlayServices';
-import { About } from './components/about';
-import { OverlayDomainTerms } from './components/OverlayDomainTerms';
-import  Career  from './components/Career';
-import { PrivacyPolicy } from './components/PrivacyPolicy';
+import TransitionHover from './components/TransitionHover';
+
 function App() {
   return (
-    <div className="App">
-      <PrivacyPolicy />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainComponent />} />
+        <Route path="/transition-hover" element={<TransitionHover />} />
+      </Routes>
+    </Router>
   );
 }
 
