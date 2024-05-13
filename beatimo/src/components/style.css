@@ -277,7 +277,7 @@
   
   .home .div {
     background-color: #eefff6;
-    height: 10851px;
+    height: 10421px;
     overflow: hidden;
     position: relative;
     width: 1440px;
@@ -513,15 +513,7 @@
     line-height: 80px;
   }
   
-  .home .about-us {
-    height: 100vh;
-    left: 2px;
-    object-fit: cover;
-    position: absolute;
-    top: 1841px;
-    width: 1440px;
-    overflow: hidden;
-  }
+
   
   .home .inspirons-les-gens {
     color: transparent;
@@ -552,11 +544,9 @@
   .home .group-4 {
     height: 474px;
     left: 52px;
-    position: absolute;
-    top: 2332px;
+    top: 4232px;
     width: 573px;
-    transition: transform 0.3s ease-in-out;
-    will-change: transform;
+    position: absolute;
   }
   
   .home .frame-5 {
@@ -621,6 +611,7 @@
     height: 115px;
     position: relative;
     width: 502px;
+    
   }
   
   .home .p {
@@ -651,10 +642,25 @@
     height: 475px;
     left: 819px;
     position: absolute;
-    top: 2745px;
+    top: 4545px;
     width: 573px;
   }
+
+  .home .about-us-wrapper {
+    position: absolute;
+    width: 1442px;
+    top: 3941px;
+    overflow: hidden;
+    height: 100%;
+    transition: top 0.9s ease, width 0.5s ease;
+  }
   
+  .home .about-us {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 3941px;
+  }
   .home .intersect-wrapper {
     background-image: url(../components/assests/home/group-40925.png);
     background-size: 100% 100%;
@@ -675,10 +681,8 @@
     height: 497px;
     left: 52px;
     position: absolute;
-    top: 3158px;
+    top: 4958px;
     width: 573px;
-    transition: transform 0.8s ease-in-out;
-    will-change: transform;
   }
   
   .home .group-8 {
@@ -890,10 +894,10 @@
   
   .home .group-wrapper {
     background-color: #ef8551;
-    height: 1000px;
+    height: 100%;
     left: 2px;
     position: absolute;
-    top: 8389px;
+    top: 9389px;
     width: 1440px;
   }
   
@@ -1173,6 +1177,7 @@
     top: 7649px;
     width: 750px;
   }
+
   
   .home .maximisez-la {
     color: #eefff6;
@@ -1471,6 +1476,7 @@
     position: relative;
     white-space: nowrap;
     width: fit-content;
+    cursor: pointer;
   }
   
   .home .group-16 {
@@ -1936,18 +1942,18 @@
     top: 0 !important;
     width: 46px !important;
   }
-
   .about {
-    background-color: #007367;
+    background-color: #ccdcda;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    height: 100%;
   }
   
   .about .div {
     background-color: #007367;
-    height: 16433px;
+    height: 15690px;
     overflow: hidden;
     position: relative;
     width: 1440px;
@@ -1991,15 +1997,12 @@
   
   .about .optimisez-le {
     color: #ffffff;
-    font-family: var(--h1-font-family);
-    font-size: var(--h1-font-size);
-    font-style: var(--h1-font-style);
-    font-weight: var(--h1-font-weight);
-    letter-spacing: var(--h1-letter-spacing);
-    line-height: var(--h1-line-height);
-    margin-top: -1px;
-    position: relative;
-    width: 1033px;
+    font-family: "Bilo-Regular", Helvetica;
+    font-size: 128.7px;
+    font-weight: 400;
+    line-height: 128.7px;
+    position: absolute;
+    width: 1354px;
   }
   
   .about .de-vos-placements {
@@ -2008,7 +2011,8 @@
     font-size: 128.7px;
     font-weight: 400;
     line-height: 128.7px;
-    position: relative;
+    position: absolute;
+    top:300px;
     text-align: right;
     width: 1354px;
   }
@@ -2275,11 +2279,14 @@
   
   .about .frame-8 {
     align-items: center;
+    flex-direction: column;
     display: flex;
     left: 626px;
     position: absolute;
     top: 3274px;
     width: 759px;
+    gap: 70px;
+
   }
   
   .about .line {
@@ -2336,7 +2343,7 @@
     position: relative !important;
   }
   
-  .about .line-11 {
+  .about .line-6 {
     height: 2px !important;
     margin-left: -22px !important;
     position: relative !important;
@@ -2782,7 +2789,7 @@
     height: 1000px;
     left: 0;
     position: absolute;
-    top: 13689px;
+    top: 14689px;
     width: 1440px;
   }
   
@@ -2865,7 +2872,7 @@
     width: 1358px;
   }
   
-  .about .line-29 {
+  .about .line-30 {
     height: 2px !important;
     left: 468px !important;
     position: absolute !important;
@@ -2962,7 +2969,7 @@
     white-space: nowrap;
   }
   
-  .about .line-30 {
+  .about .line-29 {
     height: 2px !important;
     left: 468px !important;
     position: absolute !important;
@@ -3118,7 +3125,7 @@
     width: 46px;
   }
   
-  .about .frame-48095998 {
+  .about .frame-48095997 {
     height: 46px !important;
     left: 0 !important;
     position: absolute !important;
@@ -6957,22 +6964,41 @@
   }
   
   .transition-hover .img {
-    position: fixed; 
-    top: 0;
+    height: 1200px;
     left: 0;
-    height: 100vh;  
-    width: 980px;  
+    position: absolute;
+    top: 0;
+    width: 1032px;
     transition: width 1s ease-in-out;
     background-size: cover;  
     object-fit: cover; 
   }
   
   .transition-hover .img.expanded {
+    height: 1200px;
     left: 0;
     position: absolute;
     top: 0;
-    width: 1680px;
+    width: 100%;
+    transition: width 1s ease-in-out;
+    background-size: cover;  
+    object-fit: cover; 
     
   }
+  .sticky-container {
+    position: sticky;
+    top: 0;
+}
+.card {
+  transition: transform 0.3s ease-out;
+}
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
 
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
   

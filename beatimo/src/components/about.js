@@ -308,7 +308,7 @@ export const About = () => {
                 </div>
               </div>
               <div className="frame-20">
-                <img className="rectangle-7" alt="Rectangle" src="image.png" />
+                <img className="rectangle-7" alt="Rectangle" src={rectangle32} />
                 <div className="group-13">
                   <Line92 className="line-92" />
                   <div className="frame-21">
@@ -365,7 +365,7 @@ export const About = () => {
                 </div>
               </div>
               <div className="frame-20">
-                <img className="rectangle-7" alt="Rectangle" src={rectangle3} />
+                <img className="rectangle-7" alt="Rectangle" src={rectangle32} />
                 <div className="group-13">
                   <Line92 className="line-92" />
                   <div className="frame-21">

@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { ReactComponent as CrErDeLaValeur } from "../components/assests/home/--cr-er-de-la-valeur.svg";
 import { ReactComponent as Frame11 } from "../components/assests/home/frame-11.svg";
 import { ReactComponent as Frame40916 } from "../components/assests/home/frame-40916.svg"; 
@@ -28,20 +30,87 @@ import rectangle991 from "../components/assests/home/rectangle-991.png";
 import vectorimage from "../components/assests/home/vector.png";
 import group41225 from "../components/assests/home/group-41225.png";
 export const Home = () => {
-
   
+    const navigate = useNavigate();
+  
+  const frame13Ref = useRef(null);  // Ref for the div you want to scroll to
+
+  const handleScrollToFrame13 = () => {
+    if (frame13Ref.current) {
+      const topPosition = frame13Ref.current.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: topPosition,  // This positions the target element at the top of the viewport
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const cardRef1 = useRef(null);
+  const cardRef2 = useRef(null);
+  const cardRef3 = useRef(null);
+  const imageRef = useRef(null);
+  const lastCardRef = useRef(null);
+  const aboutUsRef = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+        const scrollPos = window.scrollY;
+        const imagePos = imageRef.current ? imageRef.current.offsetTop + imageRef.current.offsetHeight : 0;
+        const lastCardPos = lastCardRef.current ? lastCardRef.current.offsetTop : 0;
+
+        if (scrollPos > imagePos && scrollPos < lastCardPos) {
+            const moveDistance = scrollPos - imagePos;
+            if (cardRef1.current) {
+                cardRef1.current.style.transform = `translateY(-${moveDistance}px)`;
+            }
+            if (cardRef2.current) {
+                cardRef2.current.style.transform = `translateY(-${moveDistance}px)`;
+            }
+            if (cardRef3.current) {
+                cardRef3.current.style.transform = `translateY(-${moveDistance}px)`;
+            }
+        } else {
+            if (cardRef1.current) {
+                cardRef1.current.style.transform = 'translateY(0)';
+            }
+            if (cardRef2.current) {
+                cardRef2.current.style.transform = 'translateY(0)';
+            }
+            if (cardRef3.current) {
+                cardRef3.current.style.transform = 'translateY(0)';
+            }
+        }
+    });
+}, []);
+useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY >= 1200 && window.scrollY <= 4000) {
+      aboutUsRef.current.style.position = 'fixed';
+      aboutUsRef.current.style.top = '0px';
+      aboutUsRef.current.style.width = '1442px';
+    } else {
+      aboutUsRef.current.style.position = 'fixed';
+      aboutUsRef.current.style.top = '1920px';
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
   return (
     <div className="home">
       <div className="div">
         <div className="overlap">
-          <img className="group" alt="Group" src={groupImage} />
           <div className="rectangle" />
           <img className="img" alt="Rectangle" src={rectangleImage} />
           <div className="rectangle-2" />
           <div className="rectangle-3" />
           <div className="group-2">
             <div className="frame">
-              <div className="overlap-group-wrapper">
+              <div className="-groupoverlap-wrapper">
                 <div className="overlap-group">
                   <p className="heading-example">
                     Beatimo excelle en actuariat, cumulant des années d&#39;expérience. Nos conseils sur mesure,
@@ -83,7 +152,9 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <img className="about-us" alt="About us" src={aboutusImage}/>
+          <div className="about-us-wrapper" ref={aboutUsRef}>
+          <img className="about-us" src={aboutusImage} alt="About Us" />
+        </div>
           <p className="inspirons-les-gens">
             <span className="text-wrapper-5">
               Inspirons <br />
@@ -91,7 +162,7 @@ export const Home = () => {
             </span>
           </p>
           <CrErDeLaValeur className="crerde-la-valeur" />
-          <div className="group-4">
+          <div className="group-4" ref={cardRef1}>
             <div className="frame-5">
               <div className="frame-6">
                 <div className="frame-7">
@@ -110,7 +181,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="group-6">
+          <div className="group-6" ref={cardRef2}>
             <div className="frame-5">
               <div className="frame-6">
                 <div className="frame-7">
@@ -130,7 +201,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="group-7">
+          <div className="group-7" ref={cardRef3}>
             <div className="frame-5">
               <div className="frame-6">
                 <div className="frame-7">
@@ -150,7 +221,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="rectangle-4" />
+          <div className="rectangle-4" ref={lastCardRef}/>
           <div className="frame-9">
             <div className="frame-10">
               <div className="group-10">
@@ -170,7 +241,7 @@ export const Home = () => {
               </p>
             </div>
           </div>
-          <div className="frame-13">
+          <div className="frame-13" ref={frame13Ref}>
             <Line7 className="line-7" />
             <div className="frame-14">
               <div className="frame-15">
@@ -377,9 +448,11 @@ export const Home = () => {
             <Frame48095965 className="frame-8" />
             <div className="frame-32">
               <div className="navbar">
-                <div className="text-wrapper-19">SERVICES</div>
-                <div className="text-wrapper-19">À PROPOS</div>
-                <div className="text-wrapper-19">CARRIÈRE</div>
+              <div className="text-wrapper-19" onClick={handleScrollToFrame13}>SERVICES</div>
+              <div className="text-wrapper-19" onClick={() => navigate('/about')}>
+            À PROPOS
+        </div>
+          <div className="text-wrapper-19">CARRIÈRE</div>
                 <div className="text-wrapper-19">RÉSEAUX SOCIAUX</div>
                 <div className="text-wrapper-19">EN</div>
               </div>
