@@ -25,14 +25,18 @@
   --subtitle-line-height: 26px;
 }
 
+
 .site-selection {
     background-color: #fffae6;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     width: 100%;
+    position:absolute;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  left:400px;
   }
-  
   .site-selection .overlap-group-wrapper {
     background-color: #fffae6;
     height: 1000px;
@@ -50,6 +54,25 @@
     position: absolute;
     top: 0;
     width: 720px;
+  }
+
+  .fade-enter {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit.fade-exit-active {
+    opacity: 0.7;
+    transition: opacity 250ms ease-out;
   }
   
   .site-selection .frame {
@@ -110,6 +133,8 @@
     position: absolute;
     top: 0;
     width: 720px;
+    transition: opacity 2.9s ease-in-out;
+  opacity: 1;
   }
   
   .site-selection .div {
@@ -119,6 +144,8 @@
     position: absolute;
     top: 0;
     width: 720px;
+    transition: opacity 2.9s ease-in-out;
+  opacity: 1;
   }
   
   .site-selection .frame-2 {
@@ -146,6 +173,8 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  left: 400px;
+  position: absolute;
 }
 
 .site-selection-Hover-Consulting-Service .overlap-group-wrapper {
@@ -182,6 +211,13 @@
   position: absolute;
   top: 0;
   width: 1032px;
+  transition: opacity 1.9s ease-in-out;
+  opacity: 1;
+}
+.site-selection-Hover-Consulting-Service .img:hover {
+  transform: scale(1.05);  /* Slightly enlarge the element on hover */
+opacity: 1.0;  
+transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out;
 }
 
 .site-selection-Hover-Consulting-Service .frame {
@@ -250,23 +286,43 @@
   position: absolute;
   top: 570px;
   width: 412px;
+
 }
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-side {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  overflow: hidden;
+  position: relative;
+}
+
 .overlap-group-wrapper {
-    transition: opacity 0.9s ease-in-out, visibility 0.5s ease-in-out;
-    position: absolute;  
-    width: 100%;  
-    height: 100%;
-  }
-  
-  .overlap-group-wrapper.hide {
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  .overlap-group-wrapper.show {
-    opacity: 1;
-    visibility: visible;
-  }
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
   .home {
     background-color: #eefff6;
     display: flex;
@@ -460,7 +516,27 @@
     height: 46.5px !important;
     position: relative !important;
     width: 46.5px !important;
+    cursor: pointer;
   }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -60%; /* Start offscreen */
+    width: 900px; /* Adjust width as necessary */
+    height: 1000px; /* Full height of the viewport */
+    transition: right 0.6s ease-in-out;
+    z-index: 2;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+}
+
+.sidebar.open {
+    right: 0; /* Slide in */
+    width: 900px; /* Adjust width as necessary */
+    height: 100%;
+}
+
   
   .home .frame-4 {
     align-items: flex-start;
@@ -605,6 +681,7 @@
   .home .frame-8 {
     flex: 0 0 auto !important;
     position: relative !important;
+    cursor: pointer;
   }
   
   .home .group-5 {
@@ -878,7 +955,7 @@
     margin-top: -1px;
     position: relative;
     white-space: nowrap;
-    width: fit-content;
+    width: 400px;
     display: inline-block; /* Ensures the elements stay in a single row */
   }
   
@@ -3978,7 +4055,7 @@
   
   .career .div {
     background-color: #fffae6;
-    height: 8829px;
+    height: 8441px;
     overflow: hidden;
     position: relative;
     width: 1440px;
@@ -4148,6 +4225,7 @@
     position: absolute;
     top: 353px;
     width: 977px;
+    top:180px;
   }
   
   .career .joignez-vous-notre-wrapper {
@@ -4189,6 +4267,7 @@
     flex: 0 0 auto;
     gap: 4px;
     position: relative;
+    top:150px;
   }
   
   .career .div-wrapper {
@@ -4693,12 +4772,12 @@
     height: 1000px;
     left: 0;
     position: absolute;
-    top: 1961px;
+    top: 2961px;
     width: 1440px;
   }
   
   .career .group-13 {
-    height: 865px;
+    height: 765px;
     left: 50px;
     position: relative;
     top: 118px;
@@ -7001,4 +7080,3 @@ body {
   opacity: 1;
   transition: opacity 0.5s ease-in;
 }
-  

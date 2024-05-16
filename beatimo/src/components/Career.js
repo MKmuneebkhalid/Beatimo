@@ -4,7 +4,7 @@ import { ReactComponent as Frame48095965 } from "../components/assests/career/fr
 import { ReactComponent as Frame48095969 } from "../components/assests/career/frame-48095969.svg";
 import { ReactComponent as Frame48095976 } from "../components/assests/career/frame-48095976.svg";
 import { ReactComponent as Frame48095977 } from "../components/assests/career/frame-48095977.svg";
-import { ReactComponent as Frame48095978 } from "../components/assests/career/frame-48095978.svg";
+import { ReactComponent as Frame48095978 } from "../components/assests/career/frame-48095978-2.svg";
 import { ReactComponent as Frame48096008 } from "../components/assests/career/frame-48096008.svg";
 import { ReactComponent as IconComponentNode } from "../components/assests/career/frame-11.svg";
 import { ReactComponent as Line24 } from "../components/assests/career/line-24.svg";

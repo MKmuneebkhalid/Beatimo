@@ -5,7 +5,7 @@ import SiteSelectionHoverConsultingServices from './SiteSelectionHoverConsulting
 
 const MainComponent = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const navigate = useNavigate();  // Hook for navigation
+  const navigate = useNavigate();
 
   const handleNavigation = () => {
     navigate('/transition-hover');
@@ -17,7 +17,7 @@ const MainComponent = () => {
         className="left-side"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        onClick={handleNavigation}  // Trigger navigation on click
+        onClick={handleNavigation}
       >
         <div className={`overlap-group-wrapper ${isHovered ? 'show' : 'hide'}`}>
           <SiteSelectionHoverConsultingServices />

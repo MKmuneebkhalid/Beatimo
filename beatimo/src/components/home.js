@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef,useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { ReactComponent as CrErDeLaValeur } from "../components/assests/home/--cr-er-de-la-valeur.svg";
@@ -11,7 +11,7 @@ import { ReactComponent as Frame48095972 } from "../components/assests/home/fram
 import { ReactComponent as Frame48095976 } from "../components/assests/home/frame-48095976.svg";
 import { ReactComponent as Frame48095977 } from "../components/assests/home/frame-48095977.svg";
 import { ReactComponent as Frame48095978 } from "../components/assests/home/frame-48095978.svg";
-import { ReactComponent as IconComponentNode } from "../components/assests/home/frame-11.svg"
+import { ReactComponent as IconComponentNode } from "../components/assests/home/frame-48095978-2.svg"
 import { ReactComponent as Intersect } from "../components/assests/home/intersect.svg";
 import { ReactComponent as Line13 } from "../components/assests/home/line-13.svg";
 import { ReactComponent as Line24 } from "../components/assests/home/line-24.svg";
@@ -29,8 +29,34 @@ import groupImage40897 from "../components/assests/home/group-40897.png";
 import rectangle991 from "../components/assests/home/rectangle-991.png";
 import vectorimage from "../components/assests/home/vector.png";
 import group41225 from "../components/assests/home/group-41225.png";
+import OverlayServices from './OverlayServices'; // Adjust path as necessary
+
 export const Home = () => {
   
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const sidebarRef = useRef(null);
+
+  // Toggle the sidebar's visibility
+  const toggleSidebar = () => {
+      setSidebarOpen(!isSidebarOpen);
+  };
+
+  // Close the sidebar if clicked outside
+  const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+          setSidebarOpen(false);
+      }
+  };
+
+  // Add event listeners for detecting clicks outside the sidebar
+  useEffect(() => {
+      document.addEventListener('mousedown', handleClickOutside);
+
+      return () => {
+          document.removeEventListener('mousedown', handleClickOutside);
+      };
+  }, []); // Empty dependency array ensures this effect only runs on mount and unmount
+
     const navigate = useNavigate();
   
   const frame13Ref = useRef(null);  // Ref for the div you want to scroll to
@@ -131,7 +157,7 @@ useEffect(() => {
                       <div className="text-wrapper-2">DÉCOUVRIR NOS SERVICES</div>
                     </div>
                   </div>
-                  <Frame11 className="frame-11" />
+                  <Frame11 className="frame-11" onClick={handleScrollToFrame13} />
                 </div>
               </div>
             </div>
@@ -248,7 +274,12 @@ useEffect(() => {
                 <div className="text-wrapper-6">01</div>
                 <div className="text-wrapper-7">Analyse de projets</div>
               </div>
-              <Frame48095972 className="frame-8" />
+              <Frame48095972 className="frame-8" onClick={toggleSidebar} />
+              <div className="home">
+            <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                {isSidebarOpen && <OverlayServices />}
+            </div>
+        </div>
             </div>
             <Line7 className="line-5" />
             <div className="frame-14">
@@ -256,7 +287,12 @@ useEffect(() => {
                 <div className="text-wrapper-6">02</div>
                 <div className="text-wrapper-8">Planification stratégique</div>
               </div>
-              <Frame48095972 className="frame-8" />
+              <Frame48095972 className="frame-8" onClick={toggleSidebar}/>
+              <div className="home">
+            <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                {isSidebarOpen && <OverlayServices />}
+            </div>
+        </div>
             </div>
             <Line7 className="line-5" />
             <div className="frame-14">
@@ -264,7 +300,12 @@ useEffect(() => {
                 <div className="text-wrapper-6">03</div>
                 <div className="text-wrapper-8">Performance portefeuille</div>
               </div>
-              <Frame48095972 className="frame-8" />
+              <Frame48095972 className="frame-8" onClick={toggleSidebar}/>
+              <div className="home">
+            <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                {isSidebarOpen && <OverlayServices />}
+            </div>
+        </div>
             </div>
             <Line7 className="line-5" />
             <div className="frame-14">
@@ -272,7 +313,12 @@ useEffect(() => {
                 <div className="text-wrapper-6">04</div>
                 <div className="text-wrapper-8">Structure partenariats</div>
               </div>
-              <Frame48095972 className="frame-8" />
+              <Frame48095972 className="frame-8" onClick={toggleSidebar}/>
+              <div className="home">
+            <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                {isSidebarOpen && <OverlayServices />}
+            </div>
+        </div>
             </div>
             <Line7 className="line-5" />
             <div className="frame-14">
@@ -280,7 +326,12 @@ useEffect(() => {
                 <div className="text-wrapper-6">05</div>
                 <div className="text-wrapper-8">Rapport aux investisseurs</div>
               </div>
-              <Frame48095972 className="frame-8" />
+              <Frame48095972 className="frame-8" onClick={toggleSidebar}/>
+              <div className="home">
+            <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                {isSidebarOpen && <OverlayServices />}
+            </div>
+        </div>
             </div>
             <Line7 className="line-5" />
             <div className="frame-14">
@@ -288,7 +339,12 @@ useEffect(() => {
                 <div className="text-wrapper-6">06</div>
                 <div className="text-wrapper-8">Planification de retraite</div>
               </div>
-              <Frame48095972 className="frame-8" />
+              <Frame48095972 className="frame-8" onClick={toggleSidebar}/>
+              <div className="home">
+            <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                {isSidebarOpen && <OverlayServices />}
+            </div>
+        </div>
             </div>
             <Line7 className="line-5" />
             <div className="frame-14">
@@ -296,7 +352,12 @@ useEffect(() => {
                 <div className="text-wrapper-6">07</div>
                 <div className="text-wrapper-8">Mentorat</div>
               </div>
-              <Frame48095972 className="frame-8" />
+              <Frame48095972 className="frame-8" onClick={toggleSidebar}/>
+              <div className="home">
+            <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                {isSidebarOpen && <OverlayServices />}
+            </div>
+        </div>
             </div>
             <Line7 className="line-5" />
           </div>
@@ -440,19 +501,19 @@ useEffect(() => {
                     <div className="text-wrapper-2">ENTRER EN CONTACT</div>
                   </div>
                 </div>
-                <NamecandidateNameFrame11Score101 className="frame-11" />
+                <NamecandidateNameFrame11Score101 className="frame-11" onClick={() => navigate('/about')}/>
               </div>
             </div>
           </div>
-          <div className="frame-31">
-            <Frame48095965 className="frame-8" />
+          <div className="frame-31" >
+            <Frame48095965 className="frame-8" onClick={() => navigate('/')} />
             <div className="frame-32">
               <div className="navbar">
               <div className="text-wrapper-19" onClick={handleScrollToFrame13}>SERVICES</div>
               <div className="text-wrapper-19" onClick={() => navigate('/about')}>
             À PROPOS
         </div>
-          <div className="text-wrapper-19">CARRIÈRE</div>
+          <div className="text-wrapper-19" onClick={() => navigate('/Career')}>CARRIÈRE</div>
                 <div className="text-wrapper-19">RÉSEAUX SOCIAUX</div>
                 <div className="text-wrapper-19">EN</div>
               </div>
